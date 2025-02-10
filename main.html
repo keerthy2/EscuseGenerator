@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExcuseGenerator</title>
+    <title>Excuse Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Excuse Generator</h1>
+        <label>Name</label> <br>
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <label>Who needs the excuse?</label><br>
+        <input type="text" id="recipient" placeholder="Who needs the excuse? (e.g., Boss, Friend, Mom)"><br>
+        <label>What do you need an excuse for?</label><br>
+        <input type="text" id="customCategory" placeholder="What do you need an excuse for? (e.g., Skipping gym, Missing work)"><br>
+        <button onclick="generateExcuse()">Generate Excuse</button>
+        <p id="excuse"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
