@@ -1,8 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+.container h1 {
+    text-align: center;
+}
+
 
 .container {
     margin-top: 50px;
@@ -10,16 +18,27 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    display: inline-block;
+    width: 100%;
+    max-width: 500px;
 }
 
-.container input, .container label {
-    margin-bottom: 15px; 
+.container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
     margin-top: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    text-align: left;
-    
+}
+
+.container input {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 button {
@@ -28,14 +47,7 @@ button {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #e64a19;
-}
-
-#excuse {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
 }
